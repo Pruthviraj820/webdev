@@ -1,0 +1,108 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #1a365d;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #4299e1;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.center {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+}
+
+/* Serial number column */
+td:first-child {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ebf8ff;
+    width: 80px;
+}
+
+/* Name column */
+td:nth-child(2) {
+    font-weight: 500;
+}
+
+/* Formula column */
+td:nth-child(3) {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #2b6cb0;
+}
+
+tr:hover {
+    background-color: #f7fafc;
+    transition: background-color 0.3s ease;
+}
+
+sub {
+    color: #4a5568;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .center {
+        width: 100%;
+    }
+    
+    td, th {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

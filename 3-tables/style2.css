@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* Container styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading styles */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    overflow: hidden;
+}
+
+/* Table header styles */
+th {
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Table cell styles */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+/* Row hover effect */
+tr:hover td {
+    background-color: #f8f9fa;
+}
+
+/* Serial number column */
+td:first-child {
+    font-weight: bold;
+    color: #3498db;
+    width: 80px;
+}
+
+/* Formula name column */
+td:nth-child(2) {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Formula column */
+td:last-child {
+    font-family: "Courier New", monospace;
+    color: #e74c3c;
+}
+
+/* Superscript styles */
+sup {
+    color: #e74c3c;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    td, th {
+        padding: 8px 10px;
+    }
+}
