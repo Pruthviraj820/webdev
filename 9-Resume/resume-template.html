@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        
+        /* Header Section */
+        .header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        /* Experience and Education Items */
+        .item {
+            margin-bottom: 20px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .item-date {
+            color: #7f8c8d;
+        }
+        
+        .item-subtitle {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .item-description ul {
+            padding-left: 20px;
+        }
+        
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-item {
+            background-color: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        
+        /* For print */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="name">Pruthviraj Jadhav</div>
+            <div class="title">Software Engineer</div>
+            <div class="contact-info">
+                <div class="contact-item">📱 7020976174</div>
+                <div class="contact-item">📧 7020976174pruthvi@gmail.com</div>
+                
+                <div class="contact-item">📍 India , Maharashtra</div>
+                <div class="contact-item">🔗 <a>www.linkedin.com/in/pruthviraj-jadhav-746042336</a></div>
+            </div>
+        </div>
+        
+        <!-- Summary Section -->
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <p>Airbnb clone ,spotify clone </p>
+        </div>
+        
+        <!-- Experience Section -->
+        <div class="section">
+            <div class="section-title">Work Experience</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Software engineer</div>
+                    <div class="item-date">Jan-June 2026 </div>
+                </div>
+                <div class="item-subtitle">Tata Technology ,pune , maharashtra</div>
+                <div class="item-description">
+                    <ul>
+                        <li>6 Moths Internship at Tata Technology as a Software Engineer .</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Marketing Coordinator</div>
+                    <div class="item-date">Mar 2018 - Dec 2020</div>
+                </div>
+                <div class="item-subtitle">XYZ Agency, Boston, MA</div>
+                <div class="item-description">
+                    <ul>
+                        <li>Assisted in planning and executing marketing campaigns for various clients</li>
+                        <li>Created content for email marketing campaigns with open rates exceeding industry average</li>
+                        <li>Conducted market research to identify trends and opportunities</li>
+                        <li>Maintained client relationships and communicated campaign progress</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">B-Tech in Computer Science Engineering</div>
+                    <div class="item-date">2023 - 2027</div>
+                </div>
+                <div class="item-subtitle">DY patil college of Engineering and Technology. </div>
+                <div class="item-description">
+                    <ul>
+                        <li>GPA: 8.6/10.0</li>
+                        <li>Marketing Club President</li>
+                        <li>Dean's List: All semesters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <div class="skills-container">
+                <div class="skill-item">UI/UX designing</div>
+                <div class="skill-item">Web Devlopement</div>
+                <div class="skill-item">Data Structures and alogorithm </div>
+                <div class="skill-item">Machine learning</div>
+                
+               
+                
+            </div>
+        </div>
+        
+        <!-- Certifications Section -->
+        <div class="section">
+            <div class="section-title">Certifications</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Webathon compition Winner</div>
+                    <div class="item-date">2024</div>
+                </div>
+            </div>
+            
+            <!-- <div class="item">
+                <div class="item-header">
+                    <div class="item-title">HubSpot Inbound Marketing Certification</div>
+                    <div class="item-date">2019</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
